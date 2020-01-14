@@ -1,35 +1,299 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
 	<title>Blog</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<!-- bootstrap -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- fontawesome -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- isotope -->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+	<!-- customizations -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="control.js"></script>
+
 </head>
 <body>
 
-	fasjffdjj
-	s
-	a
-	n
-	j
-	a
-	y
-	.
-	.
-	.
-	.
-	.
-	.
-	...........
-	sfdsf
-	df
-	d
-	sf
-	sdf
-	sdf
-	sd
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			<a class="navbar-brand" href="#">< doSo Developers /></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-	f
-	sd
-	f
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Disabled</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search snippet ..." aria-label="Search">
+					<button class="rounded-circle btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</nav>
+	</header>
 
+	<section id="home">
+
+		<div class="bg"></div>
+
+		<div id="home-content" class="container d-flex justify-content-center align-items-center">
+			<div class="heading text-center">
+				<h3 class="text-white" id="title">doSo Developers</h3>
+				<h1 class="font-weight-normal text-white">An <span class="font-weight-bolder">Online Tutorial </span> For Beginners</h1><br>
+				<a class="text-white shadow btn btn-primary btn-lg rounded-pill px-5" id="joinUs">Join Us !</a>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="container-fluid" id="snippets">
+		<div class="row" id="row">
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%;">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<!-- <span class="text-secondary">--</span> -->
+							<span class="text-secondary" id="time" data-attribute='Jan 14, 2020'>January 14, 2020
+							</span>
+							<!-- <span class="text-secondary">--</span> -->
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='December 31, 2019'>December 31, 2020</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='December 1, 2019'>December 1, 2019</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='November 11, 2019'>November 11, 2019</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='November 1, 2019'>November 1, 2019</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='August 21, 2019'>August 21, 2019</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='July 1, 2019'>July 1, 2019</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='June 1, 2019'>June 1, 2019</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='May 24, 2019'>May 24, 2019</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='February 28, 2019'>February 28, 2019</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-md-4 mb-4">
+				<div class="thumbnail rounded shadow">
+					<a href="#">
+						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%">
+						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
+							<div class="badge badge-primary">HTML</div>
+							<div class="badge badge-success">CSS</div>
+							<div class="badge badge-danger">JavaScript</div>
+						</div>
+						<div class="p-2 caption">
+							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
+							<span class="text-right"><i class="fa fa-clock-o"></i></span>
+							<span class="text-secondary" id="time" data-attribute='September 28, 2018'>September 28, 2018</span>
+							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="text-center">
+		
+		All rights reserved 2019
+
+		<br>
+
+		<a href="">mavisora.com</a>
+	</footer>
+
+	<script type="text/javascript" src="control.js"></script>
 </body>
 </html>
