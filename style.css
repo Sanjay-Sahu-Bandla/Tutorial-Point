@@ -40,13 +40,32 @@ section#snippets .thumbnail img {
  height: 240px;
 }
 
+section#snippets .thumbnail a, #links a {
+  text-decoration: none;
+}
+
+section#snippets .thumbnail:hover {
+  transform: scale(1.009);
+}
+
+footer div.socialIcons ul li a.btn-lg i.fa {
+  width: 12px;
+  padding-right: 4px;
+  margin-left: -4px;
+  transition: 0.4s;
+}
+
+footer div.socialIcons ul li:hover {
+  transform: scale(1.1);
+}
+
+/*SCROLLBAR*/
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
-  /*border-radius: 10px;*/
   background: linear-gradient(transparent);
 }
 

@@ -15,7 +15,7 @@ for (var i = 0; i < 30; i++) {
 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-	days = days==0 ? 'Today posted' : (days>28 ? '' :  (days+' Days ago'));
+	days = days==0 ? 'Posted Today' : (days>28 ? '' :  (days+' Days ago'));
 	months = ((months>0)&&(months<12)) ? (months+' Months ago') : '';
 	years = years>0 ? (years+' Years ago') : '' ;
 
