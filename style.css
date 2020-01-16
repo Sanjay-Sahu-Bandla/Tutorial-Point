@@ -59,6 +59,32 @@ footer div.socialIcons ul li:hover {
   transform: scale(1.1);
 }
 
+/*PAGE*/
+
+xmp {
+  border: 1px solid lightgrey;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+  background: #f5f5f5;
+  overflow-x: scroll;
+}
+
+xmp::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+xmp::-webkit-scrollbar-thumb {
+  height: 12px;
+  background: grey;
+}
+
+/*PAGE - ASIDE*/
+
+div#aside div.list-group a.active {
+  cursor: default;
+}
+
 /*SCROLLBAR*/
 
 ::-webkit-scrollbar {

@@ -28,7 +28,7 @@
 <body>
 
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<nav class="m-1 rounded shadow navbar navbar-expand-lg navbar-dark bg-primary" style="border-radius: 8px !important;">
 			<a class="navbar-brand" href="#">< doSo Developers /></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -65,114 +65,316 @@
 		</nav>
 	</header>
 
-	<section id="home">
+	<!-- <div class="text-primary"><?php echo $_GET['id']; ?></div> -->
 
-		<div class="bg"></div>
-
-		<div id="home-content" class="container d-flex justify-content-center align-items-center">
-			<div class="heading text-center">
-				<h3 class="text-white" id="title">doSo Developers</h3>
-				<h1 class="font-weight-normal text-white">An <span class="font-weight-bolder">Online Tutorial </span> For Beginners</h1><br>
-				<a class="text-white shadow btn btn-primary btn-lg rounded-pill px-5" id="joinUs">Join Us !</a>
-			</div>
-		</div>
-
-	</section>
-
-	<section class="container-fluid" id="snippets">
-		<div class="row" id="row">
-			<div class="col-md-4 mb-4">
-				<div class="thumbnail rounded shadow" style='height: 100%;'>
-					<a href="snippet.php" target="_blank">
-						<img src="images/gallery.png" class="rounded-top" alt="Nature" style="width:100%; height: 200px;">
-						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
-							<div class="badge badge-primary">HTML</div>
-							<div class="badge badge-success">CSS</div>
-							<div class="badge badge-danger">JavaScript</div>
-						</div>
-						<div class="p-2 caption">
-							<p class="text-dark font-weight-bold">Responsive Image Gallery - HTML | CSS | JavaScript</p>
-							<span class="text-right"><i class="fa fa-clock-o"></i></span>
-							<!-- <span class="text-secondary">--</span> -->
-							<span class="text-secondary" id="time" data-attribute='Jan 14, 2020'>January 14, 2020
-							</span>
-							<!-- <span class="text-secondary">--</span> -->
-							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
-						</div>
-					</a>
-				</div>
-			</div>
-			<div class="col-md-4 mb-4">
+	<section class="container-fluid">
+		<div class="row m-3" id="row">
+			<div class="col-sm-8">
+				<h2 class="font-weight-bold" style="font-family: 'Montserrat',sans-serif; ">Responsive Image Gallery - HTML | CSS | JavaScript</h2><br>
 				<div class="thumbnail rounded shadow">
-					<a href="#">
-						<img src="bg-6.jpg" class="rounded-top" alt="Nature" style="width:100%; height: 200px;">
-						<div id="badge" class="position-absolute p-1" style="z-index: ; top: 0;">
-							<div class="badge badge-primary">HTML</div>
-							<div class="badge badge-success">CSS</div>
-							<div class="badge badge-danger">JavaScript</div>
-						</div>
-						<div class="p-2 caption">
-							<p class="text-dark font-weight-bold">How to create Image Gallery - HTML | CSS | JavaScript</p>
-							<span class="text-right"><i class="fa fa-clock-o"></i></span>
-							<span class="text-secondary" id="time" data-attribute='December 31, 2019'>December 31, 2020</span>
-							<span class="float-right pr-2"><i class="fa fa-comment"></i></span>
-						</div>
-					</a>
+					<img src="images/gallery.png" class="rounded-top" alt="Nature" style="width:100%; height: 350px;"><hr style="margin: 0; padding: 0;">
+					<div id="badge" class="h5 p-1" style="z-index: ; top: 0px;">
+						<div class="badge badge-primary">HTML</div>
+						<div class="badge badge-success">CSS</div>
+						<div class="badge badge-danger">JavaScript</div>
+					</div>
+					<div class="p-2 caption"> 
+						<p class="text-dark font-weight-bold">Responsive Image Gallery - HTML | CSS | JavaScript</p>
+						<span class="text-right"><i class="text-primary fa fa-clock-o"></i></span>
+						<!-- <span class="text-secondary">--</span> -->
+						<span class="text-secondary" id="time" data-attribute='Jan 14, 2020'>January 14, 2020
+						</span>
+						<!-- <span class="text-secondary">--</span> -->
+						<span class="float-right pr-2"><i class="text-primary fa fa-comment"></i></span>
+					</div>
+				</div>
+
+				<div class="container pb-2 pt-3 mt-5 snippetCode thumbnail rounded shadow w-100">
+					<h3 class="text-primary">HTML</h3>
+
+					<p id="container">
+						<xmp class="p-3"><div class="container-fluid">
+
+	<div class="row no-row-gutters">
+
+		<div class="col-lg-6">
+
+			<div class="row no-row-gutters collapsible" id="visible">
+
+				<div class="col-lg-3 col-md-6 col-xs-6">
+					<img src="dp1.png"  onclick="doSo(this)">
+					<img src="dp2.png"  onclick="doSo(this)">
+					<img src="dp3.png"  onclick="doSo(this)">
+					<img src="dp4.jpg"  onclick="doSo(this)">
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-xs-6">
+
+					<img src="dp5.jpg"  onclick="doSo(this)">
+					<img src="dp6.png"  onclick="doSo(this)">
+					<img src="dp7.jpg"  onclick="doSo(this)">
+					<img src="dp8.png"  onclick="doSo(this)">
+
+				</div>
+
+				<div class="clearfix visible-xs visible-sm visible-md"></div>
+
+				<div class="col-lg-3 col-md-6 col-xs-6">
+
+					<img src="dp8.png"  onclick="doSo(this)">
+					<img src="dp9.png"  onclick="doSo(this)">
+					<img src="dp10.png"  onclick="doSo(this)">
+					<img src="dp11.png"  onclick="doSo(this)">
+
+				</div>
+
+				<div class="col-lg-3 col-md-6 col-xs-6">
+
+					<img src="dp12.jpg"  onclick="doSo(this)">
+					<img src="dp13.png"  onclick="doSo(this)">
+					<img src="dp14.png"  onclick="doSo(this)">
+					<img src="dp15.png"  onclick="doSo(this)">
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#visible"> GALLERY </button>
+
+		<div class="col-lg-6 container" id="container">
+
+			<button class="btn btn-default" onclick="this.parentElement.style.display='none'">&times;</button>
+
+			<img src="" class="c img-rounded" id="expandedImg" style="width: 100%" class="img-thumbnail">
+
+			<span id="imgTxt"></span>
+
+		</div>
+
+
+	</div> <!-- row -->
+
+</div>  <!-- container -->
+						</xmp>
+					</p><br><br>
+
+					<h3 class="text-primary">CSS</h3>
+
+					<xmp class="p-3">    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+      padding: 0;
+    }
+
+    #container {
+      position: relative;
+      display: none;
+    }
+
+    button.btn.btn-primary {
+      display: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      outline: none;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    button.btn.btn-default {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+      img {
+        opacity: .8;
+      }
+
+      img:hover {
+        opacity: 1;
+      }
+
+      #container img {
+        /*opacity: 1;*/
+      }
+
+    }
+
+					</xmp><br><br>
+					
+
 				</div>
 			</div>
-		</div>
-	</section>
 
-	<hr>
+			<!-- ASIDE -->
 
-	<footer class="container-fluid">
-
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-6 col-md-3">
-					<h5>Header 1</h5>
-				</div>			
-				<div class="col-sm-6 col-md-3">
-					1
+			<div class="col-sm-4 w-100" id="aside">
+				
+				<div class="list-group" id="list-group">
+				  <a href="#" class="list-group-item list-group-item-action active pointer-none">
+				    Browse by
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action">Bootstrap designs</a>
+				  <a href="#" class="list-group-item list-group-item-action">JavaScript</a>
+				  <a href="#" class="list-group-item list-group-item-action">Simple HTML codes</a>
+				  <a href="#" class="list-group-item list-group-item-action">Tricky Challenges</a>
+				</div><br>
+				
+				<div class="list-group" id="list-group">
+				  <a href="#" class="list-group-item list-group-item-action active">
+				    Popular
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action">Responsive Image Gallery</a>
+				  <a href="#" class="list-group-item list-group-item-action">Tab Gallery</a>
+				  <a href="#" class="list-group-item list-group-item-action">Floating Form codes</a>
+				  <a href="#" class="list-group-item list-group-item-action">Something else</a>
 				</div>
-				<div class="col-sm-6 col-md-3">
-					1
-				</div>			
-				<div class="col-sm-6 col-md-3">
-					1
-				</div>	
+
 			</div>
 		</div>
+	</section><br><br>
 
-		<br>
+	<footer class="small pt-4" style="color: #fff; background: #45526e !important;">
 
-		<div class="container">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
 
-			<ul class="list-unstyled list-inline text-center">
-				<li><a href="https://www.facebook.com/profile.php?id=100010035810827"><i class="fa fa-facebook"></i></a></li>
-				<li><a href="https://twitter.com/SanjaySahu14312"><i class="fa fa-twitter"></i></a></li>
-				<li><a href="https://in.pinterest.com/sanjaysahubandla"><i class="fa fa-pinterest"></i></a></li>
-				<li><a href="https://www.instagram.com/sanjay_sahu_bandla"><i class="fa fa-instagram"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/sanjay-sahu-395b2a147/"><i class="fa fa-linkedin"></i></a></li>
-			</ul>   
+			<!-- Footer links -->
+			<div class="row text-center text-md-left mt-3 pb-3">
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold">doSo Developers</h6>
+					<p>Here you can learn flexible and responsive web designing snippets with practial demos.</p>
+				</div>
+				<!-- Grid column -->
+
+				<hr class="w-100 clearfix d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold">Courses Involved</h6>
+					<p>
+						<a href="#" class="text-white font-weight-lighter">HTML</a>
+					</p>
+					<p>
+						<a href="#" class="text-white">CSS</a>
+					</p>
+					<p>
+						<a href="#" class="text-white">JavaScript</a>
+					</p>
+					<p>
+						<a href="#" class="text-white">Bootstrap</a>
+					</p>
+				</div>
+				<!-- Grid column -->
+
+				<hr class="w-100 clearfix d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+					<p>
+						<a href="#!" class="text-white">About Us</a>
+					</p>
+					<p>
+						<a href="#!" class="text-white">Contact</a>
+					</p>
+					<p>
+						<a href="#!" class="text-white">Newsletter</a>
+					</p>
+					<p>
+						<a href="#!" class="text-white">Privacy Policy</a>
+					</p>
+				</div>
+
+				<!-- Grid column -->
+				<hr class="w-100 clearfix d-md-none">
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+					<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+					<p><i class="fa fa-home pr-2"></i> Nizamabad, Telangana, Inida</p>
+					<p><i class="fa fa-envelope pr-2"></i> sanjaysahubandla@gmail.com</p>
+					<p><i class="fa fa-phone pr-2"></i> + 91 99080 6610</p>
+					<p><i class="fa fa-print pr-2"></i> + 91 95533 11848</p>
+				</div>
+				<!-- Grid column -->
+
+			</div>
+			<!-- Footer links -->
+
+			<hr>
+
+			<!-- Grid row -->
+			<div class="row d-flex align-items-center">
+
+				<!-- Grid column -->
+				<div class="col-md-7 col-lg-8">
+
+					<!--Copyright-->
+					<p class="text-center text-md-left">© 2020 Copyright:
+						<a href="#" class="text-white">
+							<strong> dosodevelopers.com</strong>
+						</a>
+					</p>
+
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-5 col-lg-4 ml-lg-0">
+
+					<!-- Social buttons -->
+					<div class="text-center text-md-right socialIcons"><br>
+						<ul class="list-unstyled list-inline">
+							<li class="list-inline-item">
+								<a class="btn-lg text-white rounded-circle shadow rgba-white-slight mx-1" href="https://www.facebook.com/profile.php?id=100010035810827" style="background: #3b5998;">
+									<i class="fa fa-facebook" style="margin-left: 0;"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn-lg text-white rounded-circle shadow rgba-white-slight mx-1" href="https://twitter.com/SanjaySahu14312" style="background: #1DA1F2;">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn-lg text-white  rounded-circle shadow rgba-white-slight mx-1" href="https://in.pinterest.com/sanjaysahubandla" style="background: #c8232c;">
+									<i class="fa fa-pinterest"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn-lg text-white  rounded-circle shadow rgba-white-slight mx-1" href="https://www.linkedin.com/in/sanjay-sahu-395b2a147/" style="background: #0e76a8;">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="btn-lg text-white  rounded-circle shadow 				rgba-white-slight mx-1" href="https://www.instagram.com/	sanjay_sahu_bandla" style="background: #f09433; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );"><i class="fa fa-instagram"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- Grid column -->
+
+			</div>
+			<!-- Grid row -->
 
 		</div>
-
-		<!-- Copyright -->
-		<div class="footer-copyright text-center">© 2019 Copyright:
-			<a href="#" style=""> dosodevelopers.com</a>
-		</div>
+		<!-- Footer Links -->
 
 	</footer>
-
-	<!-- <footer class="text-center">
-		
-		All rights reserved 2019
-
-		<br>
-
-		<a href="">mavisora.com</a>
-	</footer> -->
 
 	<script type="text/javascript" src="control.js"></script>
 </body>

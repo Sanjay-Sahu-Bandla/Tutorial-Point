@@ -28,7 +28,7 @@
 <body>
 
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<nav class="m-1 rounded shadow navbar navbar-expand-lg navbar-dark bg-primary" style="border-radius: 8px !important;">
 			<a class="navbar-brand" href="#">< doSo Developers /></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -65,7 +65,100 @@
 		</nav>
 	</header>
 
-	<div class="text-primary"><?php echo $_GET['id']; ?></div>
+	<section class="container-fluid">
+		<div class="row m-3" id="row">
+			<div class="col-sm-8">
+				<h2 class="font-weight-bold" style="font-family: 'Montserrat',sans-serif; ">
+
+
+					<!-- Responsive Image Gallery - HTML | CSS | JavaScript  -->
+
+					<?php 
+
+					$user = 'root';
+					$password = '';
+					$db = 'tutorialPoint';
+
+					$Id = $_GET['id'];
+
+					// Create connection
+					$conn = mysqli_connect('localhost', $user, $password, $db);
+
+					// Check connection
+					if (!$conn) {
+					    die("Connection failed: " . mysqli_connect_error());
+					}
+
+					$sql = "SELECT name,image,source,badge FROM snippets WHERE id = '$Id'";
+					$myData = mysqli_query($conn,$sql);
+
+
+					if(mysqli_num_rows($myData) > 0) {
+					  
+					while($record=mysqli_fetch_array($myData)){
+
+						echo $record['name'];
+						$source = $record['source'];
+						$img = $record['image'];
+						$badge = $record['badge'];
+
+						}
+					}
+
+					?>
+
+
+
+				</h2><br>
+				<div class="thumbnail rounded shadow">
+					<img src="data:image/jpeg;base64,<?php echo base64_encode($img); ?>" class="rounded-top" alt="Nature" style="width:100%; height: 350px;"><hr style="margin: 0; padding: 0;">
+					
+					<?php echo $badge; ?>
+						<!-- <span class="text-secondary">--</span> -->
+						<span class="float-right pr-2"><i class="text-primary fa fa-comment"></i></span>
+					</div>
+				</div>
+
+				<!-- Getting source code from database -->
+
+				<?php
+
+					echo $source;
+
+					mysqli_close($conn);
+
+				?>
+
+				
+			</div>
+
+			<!-- ASIDE -->
+
+			<div class="col-sm-4 w-100" id="aside">
+				
+				<div class="list-group" id="list-group">
+				  <a href="#" class="list-group-item list-group-item-action active pointer-none">
+				    Browse by
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action">Bootstrap designs</a>
+				  <a href="#" class="list-group-item list-group-item-action">JavaScript</a>
+				  <a href="#" class="list-group-item list-group-item-action">Simple HTML codes</a>
+				  <a href="#" class="list-group-item list-group-item-action">Tricky Challenges</a>
+				</div><br>
+				
+				<div class="list-group" id="list-group">
+				  <a href="#" class="list-group-item list-group-item-action active">
+				    Popular
+				  </a>
+				  <a href="#" class="list-group-item list-group-item-action">Responsive Image Gallery</a>
+				  <a href="#" class="list-group-item list-group-item-action">Tab Gallery</a>
+				  <a href="#" class="list-group-item list-group-item-action">Floating Form codes</a>
+				  <a href="#" class="list-group-item list-group-item-action">Something else</a>
+				</div>
+
+			</div>
+		</div>
+	</section><br><br>
 
 	<footer class="small pt-4" style="color: #fff; background: #45526e !important;">
 
@@ -108,16 +201,16 @@
 				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
 					<h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
 					<p>
-						<a href="#!" class="text-white">Your Account</a>
+						<a href="#!" class="text-white">About Us</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Become an Affiliate</a>
+						<a href="#!" class="text-white">Contact</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Shipping Rates</a>
+						<a href="#!" class="text-white">Newsletter</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Help</a>
+						<a href="#!" class="text-white">Privacy Policy</a>
 					</p>
 				</div>
 
