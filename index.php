@@ -28,6 +28,25 @@
 <body>
 
 	<header>
+
+
+
+		<?php 
+
+		$user = 'root';
+		$password = '';
+		$db = 'tutorialPoint';
+
+					// Create connection
+		$conn = mysqli_connect('localhost', $user, $password, $db);
+
+					// Check connection
+		if (!$conn) {
+			die("Connection failed: " . mysqli_connect_error());
+		}
+
+		?>
+
 		<nav class="m-1 rounded shadow navbar navbar-expand-lg navbar-dark bg-primary" style="border-radius: 8px !important;">
 			<a class="navbar-brand" href="#">< doSo Developers /></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,11 +76,42 @@
 						<a class="nav-link" href="#">Disabled</a>
 					</li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search snippet ..." aria-label="Search">
-					<button class="rounded-circle btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+				<form class="form-inline my-2 my-lg-0" method="post" action="">
+					<input list="similar" type="text" class="form-control mr-sm-2" name="keyword" type="" placeholder="Search snippet ..." aria-label="Search">
+					<button name="search" id="search" class="rounded-circle btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
 				</form>
 			</div>
+
+			
+
+		<?php
+
+		if(isset($_POST['search'])) {
+
+			$keyword = $_POST['keyword']; 
+
+			$sql = "SELECT name,image,source,badge FROM snippets WHERE name LIKE '%$keyword%'";
+
+			$myData = mysqli_query($conn,$sql);
+
+			if(mysqli_num_rows($myData) > 0) {
+
+				echo "<datalist id='similar'>";
+
+				while($record=mysqli_fetch_array($myData)) {
+					// echo "<option>". $record['name'] ."</option>";
+							echo "<option>" . $record['name'] . "</option>";
+					// echo "fsdjfdjfdshfjhdsajkfhsdjf";
+
+				}
+					  echo "</datalist>";
+
+			}
+
+		}
+
+
+		?>
 		</nav>
 	</header>
 

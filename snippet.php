@@ -222,7 +222,7 @@
 					<h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
 					<p><i class="fa fa-home pr-2"></i> Nizamabad, Telangana, Inida</p>
 					<p><i class="fa fa-envelope pr-2"></i> sanjaysahubandla@gmail.com</p>
-					<p><i class="fa fa-phone pr-2"></i> + 91 99080 6610</p>
+					<p><i class="fa fa-phone pr-2"></i> + 91 99080 86610</p>
 					<p><i class="fa fa-print pr-2"></i> + 91 95533 11848</p>
 				</div>
 				<!-- Grid column -->
