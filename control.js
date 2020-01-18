@@ -23,3 +23,17 @@ for (var i = 0; i < 30; i++) {
 }
 
 },1000);
+
+$('#searchbtn').click(function(){
+
+    var similarCode = $('#similarCode').val();
+
+    $('#similar option').each(function() {
+
+        if($(this).val() == similarCode) {
+
+            window.location = $(this).attr('id');
+
+        }
+    });
+});
