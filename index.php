@@ -12,6 +12,7 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 	<!-- fontawesome -->
@@ -39,7 +40,7 @@
 			<div class="heading text-center">
 				<h3 class="text-white" id="title">doSo Developers</h3>
 				<h1 class="font-weight-normal text-white">An <span class="font-weight-bolder">Online Tutorial </span> For Beginners</h1><br>
-				<a class="text-white shadow btn btn-primary btn-lg rounded-pill px-5" id="joinUs">Join Us !</a>
+				<a href="mailto:sanjaysahubandla@gmail.com" class="text-white shadow btn btn-primary btn-lg rounded-pill px-5" id="joinUs">Join Us !</a>
 			</div>
 		</div>
 
@@ -235,5 +236,33 @@
 	<?php require 'assets/footer.php'; ?>
 
 	<script type="text/javascript" src="control.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      	scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+    });
+    } // End if
+});
+});
+</script>
 </body>
 </html>

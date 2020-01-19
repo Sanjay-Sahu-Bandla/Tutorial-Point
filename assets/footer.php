@@ -1,4 +1,4 @@
-<footer class="small pt-4" style="color: #fff; background: #45526e !important;">
+<footer id="footer" class="small pt-4" style="color: #fff; background: #45526e !important;">
 
 		<!-- Footer Links -->
 		<div class="container text-center text-md-left">
@@ -19,16 +19,16 @@
 				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
 					<h6 class="text-uppercase mb-4 font-weight-bold">Courses Involved</h6>
 					<p>
-						<a href="#" class="text-white font-weight-lighter">HTML</a>
+						<a href="assets/category.php?cat=HTML" class="text-white font-weight-lighter">HTML</a>
 					</p>
 					<p>
-						<a href="#" class="text-white">CSS</a>
+						<a href="assets/category.php?cat=css" class="text-white">CSS</a>
 					</p>
 					<p>
-						<a href="#" class="text-white">JavaScript</a>
+						<a href="assets/category.php?cat=JavaScript" class="text-white">JavaScript</a>
 					</p>
 					<p>
-						<a href="#" class="text-white">Bootstrap</a>
+						<a href="assets/category.php?cat=bs" class="text-white">Bootstrap</a>
 					</p>
 				</div>
 				<!-- Grid column -->
@@ -39,16 +39,16 @@
 				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
 					<h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
 					<p>
-						<a href="#!" class="text-white">About Us</a>
+						<a href="https://www.linkedin.com/in/sanjay-sahu-395b2a147/" class="text-white">About Us</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Contact</a>
+						<a href="mailto:sanjaysahubandla@gmail.com" class="text-white">Contact</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Newsletter</a>
+						<a href="mailto:sanjaysahubandla@gmail.com" class="text-white">Newsletter</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Privacy Policy</a>
+						<a href="mailto:sanjaysahubandla@gmail.com" class="text-white">Privacy Policy</a>
 					</p>
 				</div>
 
@@ -90,7 +90,7 @@
 				<div class="col-md-5 col-lg-4 ml-lg-0">
 
 					<!-- Social buttons -->
-					<div class="text-center text-md-right socialIcons"><br>
+					<div class="text-center text-md-right socialIcons" id="social"><br>
 						<ul class="list-unstyled list-inline">
 							<li class="list-inline-item">
 								<a class="btn-lg text-white rounded-circle shadow rgba-white-slight mx-1" href="https://www.facebook.com/profile.php?id=100010035810827" style="background: #3b5998;">

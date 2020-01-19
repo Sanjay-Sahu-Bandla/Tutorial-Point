@@ -24,7 +24,7 @@
 
 			while($record=mysqli_fetch_array($myData)) {
 
-				echo "<option id='snippet.php?id=". $record['id'] ."'>";
+				echo "<option id='/TutorialPoint/snippet.php?id=". $record['id'] ."'>";
 				echo $record['name'] . "</option>";
 
 			}
@@ -61,7 +61,7 @@
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Disabled</a>
+						<a class="nav-link" id="smoothSocial" href="#social">Social</a>
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0" method="post" action="">
