@@ -29,7 +29,7 @@
 
 	<!-- Navbar -->
 
-	<?php require 'assets/navbar.php'; ?>
+	<?php include 'assets/navbar.php'; ?>
 
 	<section id="home">
 
@@ -232,7 +232,7 @@
 	</section>
 
 	<!-- Footer -->
-	<?php require 'footer.php'; ?>
+	<?php require 'assets/footer.php'; ?>
 
 	<script type="text/javascript" src="control.js"></script>
 </body>

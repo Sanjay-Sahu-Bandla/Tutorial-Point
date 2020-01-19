@@ -5,9 +5,10 @@
 $connect = new PDO('mysql:host=localhost;dbname=tutorialPoint', 'root', '');
 
 $error = '';
+$id = $_GET['id'];
+$snppet_id = $_POST['snippet_id'];
 $comment_name = $_POST["comment_name"];
 $comment_content = $_POST["comment_content"];
-
 
 if($error == '')
 {

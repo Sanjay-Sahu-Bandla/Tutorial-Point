@@ -12,6 +12,7 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 	<!-- fontawesome -->
@@ -104,19 +105,28 @@
 				  <a href="#" class="list-group-item list-group-item-action active">
 				    Popular
 				  </a>
-				  <a href="#" class="list-group-item list-group-item-action">Responsive Image Gallery</a>
-				  <a href="#" class="list-group-item list-group-item-action">Tab Gallery</a>
-				  <a href="#" class="list-group-item list-group-item-action">Floating Form codes</a>
-				  <a href="#" class="list-group-item list-group-item-action">Something else</a>
+				  <a href="snippet.php?id=1" class="list-group-item list-group-item-action">Responsive Image Gallery</a>
+				  <a href="snippet.php?id=2" class="list-group-item list-group-item-action">Circle Loader</a>
+				  <a href="snippet.php?id=3" class="list-group-item list-group-item-action">Custom Checkbox & Radio</a>
+				  <a href="snippet.php?id=4" class="list-group-item list-group-item-action">Microsoft Loader</a>
+				  <a href="snippet.php?id=5" class="list-group-item list-group-item-action">Responsive Pofile Card</a>
+				  <a href="snippet.php?id=6" class="list-group-item list-group-item-action">Floating Fields</a>
+				  <a href="snippet.php?id=7" class="list-group-item list-group-item-action">Creating Tab Gallery</a>
+				  <a href="snippet.php?id=8" class="list-group-item list-group-item-action">Traffic Loader</a>
+				  <a href="snippet.php?id=9" class="list-group-item list-group-item-action">12 Hours Timing With Progressbar</a>
+				  <a href="snippet.php?id=10" class="list-group-item list-group-item-action">Creating Torch Light</a>
 				</div>
 
 			</div>
 		</div>
-	</section><br><br>
+	</section>
+
+	<!-- Comment Box -->
+	<?php include 'commentBox.php'; ?>
 
 	<!-- footer -->
 
-	<?php require 'footer.php';?>
+	<?php include 'assets/footer.php';?>
 
 	<script type="text/javascript" src="control.js"></script>
 </body>
