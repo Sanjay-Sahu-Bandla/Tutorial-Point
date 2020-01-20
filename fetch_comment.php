@@ -2,13 +2,11 @@
 
 //fetch_comment.php
 
+$id = $_REQUEST['id'];
+
 $connect = new PDO('mysql:host=localhost;dbname=tutorialPoint', 'root', '');
 
-$query = "
-SELECT * FROM comment_box 
-WHERE parent_comment_id = '0' 
-ORDER BY comment_id DESC
-";
+$query = "SELECT * FROM comment_box WHERE parent_comment_id = '0' AND snippet_id = '$id' ORDER BY comment_id DESC";
 
 $statement = $connect->prepare($query);
 

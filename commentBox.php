@@ -10,6 +10,7 @@
 			<textarea name="comment_content" id="comment_content" class="form-control" placeholder="Enter Comment" rows="5"></textarea>
 		</div>
 		<div class="form-group">
+			<input type="hidden" name="snippet_id" id="snippet_id" value="<?php echo $_GET['id'] ?>" />
 			<input type="hidden" name="comment_id" id="comment_id" value="0" />
 			<input type="submit" name="submit" id="submit" class="btn btn-info" value="Submit" />
 		</div>
@@ -51,7 +52,7 @@
 		function load_comment()
 		{
 			$.ajax({
-				url:"fetch_comment.php",
+				url:"fetch_comment.php?id=<?php echo $_GET['id'] ?>",
 				method:"POST",
 				success:function(data)
 				{
